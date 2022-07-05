@@ -1,10 +1,29 @@
-import React from 'react'
-import './nav.scss'
+import React from "react";
+import "./nav.scss";
+import {
+  AiOutlineHome,
+  AiOutlineUser,
+  AiOutlineBook,
+  AiOutlinePhone,
+} from "react-icons/ai";
 
 const Nav = () => {
   return (
-    <div>Nav</div>
-  )
-}
+    <nav>
+      <a href="#">
+        <AiOutlineHome />
+      </a>
+      <a href="#about">
+        <AiOutlineUser />
+      </a>
+      <a href="#experience">
+        <AiOutlineBook />
+      </a>
+      <a href="#contacts">
+        <AiOutlinePhone />
+      </a>
+    </nav>
+  );
+};
 
-export default Nav
+export default Nav;

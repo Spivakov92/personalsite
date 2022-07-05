@@ -44,12 +44,12 @@ header {
 .me {
   // background: $color-primary;
   box-shadow: 0px 0px 15px $color-primary;
-  width: 22rem;
+  width: 30%;
 
   // height: 30rem;
   position: absolute;
-  left: calc(50% - 11rem);
-  margin-top: 4rem;
+  left: 35%;
+  margin-top: 2rem;
   border-radius: 50%;
   & > img {
     border-radius: 50%;
@@ -68,12 +68,14 @@ header {
 // media screens
 
 @media screen and (max-width: 1024px) {
-
+  header {
+    height: 65vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: 85vh;
       }
       .header__socials , .scroll__down{
         display: none;
