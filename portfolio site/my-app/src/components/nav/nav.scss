@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 nav {
   background: rgba(0, 0, 0, 0.3);
   width: max-content;
@@ -12,7 +14,19 @@ nav {
   border-radius: 3rem;
   backdrop-filter: blur(5px);
 
-  &>a{
+  & > a {
     padding: 0.5rem;
+    color: $color-light;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+    &.active {
+      background-color: $color-bg-variant;
+      color: $color-white;
+    }
   }
 }
