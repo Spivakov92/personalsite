@@ -43,7 +43,7 @@ h1 {
 
 section {
   margin-top: 8rem;
-  height: 100vh;
+  // height: 80vh;
   & > h2 {
     text-align: center;
     color: $color-primary;
@@ -102,8 +102,9 @@ img {
 
 // media screens
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1180px) {
   section {
+    // height: 100vh;
     margin-top: 6rem;
   }
 

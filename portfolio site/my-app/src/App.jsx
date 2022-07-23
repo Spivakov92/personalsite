@@ -22,7 +22,6 @@ const App = () => {
     <Nav />
     <About />
     <Experience />
-    <Testimonials />
     <Contacts />
     <Footer />
     
