@@ -27,11 +27,7 @@ const about = () => {
               <h5>Certification</h5>
               <small>Front end development - Logos IT academy</small>
             </article>
-            {/* <article className="about__card">
-              <FaUniversity className="about__card-icon" />
-              <h5>Educatiuon</h5>
-              <small>architecrure - bachelore</small>
-            </article> */}
+         
           </div>
 
           <p>
