@@ -69,12 +69,15 @@ const Contacts = () => {
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="Your name" />
-          <input type="email" name="email" placeholder="Your email" required />
+          <h5>Your name</h5>
+          <input type="text" name="name" placeholder="John" />
+          <h5>Your email</h5>
+          <input type="email" name="email" placeholder="Jonh@gmail.com" required />
+          <h5>Your message</h5>
           <textarea
             name="message"
             rows="5"
-            placeholder="Your message"
+            placeholder="Hello..."
             required
           ></textarea>
           <button type="submit" className="btn btn-primary">

@@ -87,6 +87,7 @@ img {
   cursor: pointer;
   border: 1px solid $color-primary;
   transition: $transition;
+  user-select: none;
 
   &-primary {
     background: $color-primary;
@@ -96,7 +97,7 @@ img {
   &:hover {
     background: $color-white;
     color: $color-bg;
-    border: none;
+    border: 1px solid transparent;
   }
 }
 
