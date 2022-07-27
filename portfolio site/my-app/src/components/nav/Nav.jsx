@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import "./nav.scss";
 import {
   AiOutlineHome,
@@ -7,9 +7,19 @@ import {
   AiOutlineBook,
   AiOutlinePhone,
 } from "react-icons/ai";
+import "../../variables.scss";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
+
+
+const setColor = (bgColor , bgColorVr ,colorPr, colorPrVr )=>{
+  document.documentElement.style.setProperty('--bg', bgColor);
+  document.documentElement.style.setProperty('--bg-vr', bgColorVr);
+  document.documentElement.style.setProperty('--clr-pr', colorPr);
+  document.documentElement.style.setProperty('--clr-pr-vr', colorPrVr);
+}
+
   return (
     <nav>
       <a
@@ -40,6 +50,7 @@ const Nav = () => {
       >
         <AiOutlinePhone />
       </a>
+      <button onClick={()=>setColor('#fefae0' , '#283618' , '#606c38' , '#dda15e')}>color</button>
     </nav>
   );
 };

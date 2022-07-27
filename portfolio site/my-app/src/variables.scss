@@ -1,9 +1,18 @@
-$color-bg:#1f1f38;
-$color-bg-variant:#2c2c6c;
-$color-primary:#4db5ff;
-$color-primary-variant: rgba(77,181,255,0.4);
-$color-white:#fff;
-$color-light:rgba(255,255,255,0.6);
+
+:root{
+    --bg:#1f1f38;
+    --bg-vr:#2c2c6c;
+    --clr-pr:#4db5ff;
+    --clr-pr-vr:rgba(77,181,255,0.4);
+    --clr-wt: #fff;
+    --clr-lt:rgba(255,255,255,0.6);
+}
+$color-bg:var(--bg);
+$color-bg-variant:var(--bg-vr);
+$color-primary:var(--clr-pr);
+$color-primary-variant: var(--clr-pr-vr);
+$color-white:var(--clr-wt);
+$color-light:var(--clr-lt);
 
 
 $container-width-lg:75%;
@@ -11,3 +20,5 @@ $containet-width-md:85%;
 $container-width-sm:90%;
 
 $transition: all 300ms ease;
+
+
